@@ -68,8 +68,23 @@ public class XMLPayload {
 		
 	}
 	
+	/*
+	 * This method will create XML elements and the output XML file
+	 */
+	
 	
 	public void addElements(Cobol c) {
+		/*
+		 * add commentLine element
+		 */
+		String commentLine = c.getCommentLine();
+		if (commentLine != null) {
+			this.addCommentLineElement(commentLine);
+			//System.out.println("Got Section");
+			//Add contents of procedure division
+		} else {
+			//System.out.println("Comment Line null");
+		}
 		/*
 		 *  add sectionName element
 		 */		
@@ -188,7 +203,10 @@ public class XMLPayload {
 		}
 	}
  	
-	void addCommentLineElement(String stringElement) {
+ 	/*
+	 * This method will create XML elements and the output XML file
+	 */
+ 	void addCommentLineElement(String stringElement) {
 		//  Comment Line element
 		
 		if(stringElement != null) {

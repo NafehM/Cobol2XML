@@ -24,15 +24,12 @@ package cobol;
 import utensil.*;
 
 public class Cobol implements PubliclyCloneable {
-	protected String commentLine;
+	protected String commentLine; //to hold the comment line text
 	protected String program_id;
 	protected String sectionName;
 	protected String divisionName;
 	protected int dayDateWritten = 0;
 	protected String monthDateWritten;
-	
-	
-	
 
 	protected int yearDateWritten = 0;
 	
@@ -40,6 +37,9 @@ public class Cobol implements PubliclyCloneable {
 	protected String constantName;
 	protected double constantValue;
 	protected int LineNumber = 0;
+	
+	
+	
 
 	
 	/**
@@ -116,6 +116,7 @@ public class Cobol implements PubliclyCloneable {
 	 * @return line of commented text from the COBOL program
 	 */
 	public String getCommentLine() {
+		//System.out.println("getComment()");
 		return commentLine;
 	}
 	
@@ -181,6 +182,7 @@ public class Cobol implements PubliclyCloneable {
 	 * @return line of commented text from the COBOL program
 	 */
 	public void setCommentLine(String commentLine) {
+		//System.out.println("setComment(): " + commentLine);
 		this.commentLine = commentLine;
 	}
 
