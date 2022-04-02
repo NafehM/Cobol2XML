@@ -113,8 +113,9 @@ public class Cobol2XML {
 				is.close(); 
 			}		
 		  } // finally FilelInputStream
-		System.out.println("arg[0]" + args[0]); //new code added
-		System.out.println("arg[1]" + args[1]);
+		System.out.println("arg[0]" + args[0]); //new/ to print out the input filename
+		System.out.println("arg[1]" + args[1]);//new/ to print out the output filename
+		System.out.println("arg[0]" + args[0]+ " output-> " + args[1]); //new/ to print out input & output filenames
 
 	} // main()
 }
