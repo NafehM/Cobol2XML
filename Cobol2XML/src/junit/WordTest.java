@@ -2,25 +2,24 @@ package junit;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
-
-import parse.tokens.Num;
 import java.util.ArrayList;
 
+import org.junit.Test;
 
-public class NumTest {
+import parse.tokens.Word;
+
+public class WordTest {
 
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
 		
-		Num num = new Num();
+		Word word = new Word();
 		int maxDepth = 2;
 		int depth = 1;
 		ArrayList<String> arrayList = new ArrayList<String>();
-		arrayList = num.randomExpansion(maxDepth, depth);
-		assertFalse(arrayList.isEmpty());
-		
+		arrayList = word.randomExpansion(maxDepth, depth);
+		assertFalse( arrayList.isEmpty() );
 	}
 
 }
