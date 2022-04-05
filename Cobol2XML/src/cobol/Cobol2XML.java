@@ -113,8 +113,8 @@ public class Cobol2XML {
 				is.close(); 
 			}		
 		  } // finally FilelInputStream
-		System.out.println("arg[0]" + args[0]); //new code added
-		System.out.println("arg[1]" + args[1]);
+		System.out.println("arg[0] is input:"  + args[0]); //new code added
+		System.out.println("arg[1] is output:" + args[1]);
 
 	} // main()
 }
