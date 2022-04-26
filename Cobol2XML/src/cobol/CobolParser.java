@@ -73,7 +73,7 @@ public class CobolParser {
 		Sequence s = new Sequence();
 		s.add(new Num());
 		s.add(new Word());
-		s.add(new CaselessLiteral("value"));
+		s.add(new CaselessLiteral("pic"));
 		s.add(new Num());
 		s.setAssembler(new ItemLevelAssembler());
 		
