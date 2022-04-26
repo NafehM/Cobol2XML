@@ -68,11 +68,11 @@ public class XMLPayload {
 		
 	}
 	
+	
+	
 	/*
 	 * This method will create XML elements and the output XML file
 	 */
-	
-	
 	public void addElements(Cobol c) {
 		/*
 		 * add commentLine element
@@ -158,7 +158,18 @@ public class XMLPayload {
 		}
 		}
 		
-
+	private void addItemLevel(String itemLevel, String itemName, String pictureClause, int displayLength) {
+		
+		if (itemName != null) {
+			Element cobolname = doc.createElement("Item Level");
+			
+			Element itemID = doc.createElement("Item");
+			Attr attrType2 = doc.createAttribute("Item Level");
+			attrType2.setValue( itemLevel );
+			itemID.setAttributeNode(attrType2);
+			cobolname.appendChild(itemID);
+		}
+	}
 	private void addConstantValueElement(String constantName, double constantValue, int lineNumber) {
 		//Program ID element
 		

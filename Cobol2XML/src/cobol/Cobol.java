@@ -38,6 +38,11 @@ public class Cobol implements PubliclyCloneable {
 	protected double constantValue;
 	protected int LineNumber = 0;
 	
+	//Item Level
+	protected int itemLevel;
+	protected String itemName;
+	protected String pictureClause;
+	protected int displayLength;
 	
 	
 
@@ -110,6 +115,56 @@ public class Cobol implements PubliclyCloneable {
 	  }
 
 
+	 
+	 
+	/**
+	 * @return the itemLevel
+	 */
+	public int getItemLevel() {
+		return itemLevel;
+	}
+	/**
+	 * @param itemLevel the itemLevel to set
+	 */
+	public void setItemLevel(int itemLevel) {
+		this.itemLevel = itemLevel;
+	}
+	/**
+	 * @return the itemName
+	 */
+	public String getItemName() {
+		return itemName;
+	}
+	/**
+	 * @param itemName the itemName to set
+	 */
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	/**
+	 * @return the pictureClause
+	 */
+	public String getPictureClause() {
+		return pictureClause;
+	}
+	/**
+	 * @param pictureClause the pictureClause to set
+	 */
+	public void setPictureClause(String pictureClause) {
+		this.pictureClause = pictureClause;
+	}
+	/**
+	 * @return the displayLength
+	 */
+	public int getDisplayLength() {
+		return displayLength;
+	}
+	/**
+	 * @param displayLength the displayLength to set
+	 */
+	public void setDisplayLength(int displayLength) {
+		this.displayLength = displayLength;
+	}
 	/**
 	 * Return line of commented text from the COBOL program.
 	 *
